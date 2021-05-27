@@ -9,6 +9,7 @@
   },
   "scripts": {
     "test": "mocha --timeout 30000 ./test/**/*.js --exit",
+    "sonar":"sonar-scanner",
     "coverage": "./node_modules/.bin/nyc -r cobertura -r text-summary -r html npm test",
     "coverage-lcov": "./node_modules/.bin/nyc -r cobertura -r text-summary -r lcov npm test",
     "start": "nodemon server.js",
@@ -30,6 +31,7 @@
     "mocha": "8.2.0",
     "nock": "13.0.4",
     "nyc": "15.1.0",
+    "sonar-scanner":"3.1.0",
     "supertest": "3.0.0"
   }
 }
